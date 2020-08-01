@@ -1,0 +1,126 @@
+.JoinModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 250px;
+  width: 400px;
+}
+
+.JoinModal .JoinModalMain {
+  background-color: #ffffff;
+  padding: 18px 36px;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.JoinModalMain form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Here */
+.JoinModal .JoinModalMain .SectionAnimation {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.JoinModal .JoinModalMain .SectionAnimation input {
+  border: none;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+
+  font-size: 1rem;
+}
+
+.JoinModal .JoinModalMain .SectionAnimation input:focus {
+  outline: none;
+}
+
+.JoinModal .JoinModalMain .SectionAnimation label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  border-bottom: 1px solid black;
+
+  color: #a3a3a3;
+}
+
+.JoinModal .JoinModalMain .SectionAnimation label::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+
+  border-bottom: 3px solid #6661ba;
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.SectionAnimation label .RoomJoinNameContent,
+.SectionAnimation label .RoomJoinPasswordContent {
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.SectionAnimation input:focus + .RoomJoinNameLabel .RoomJoinNameContent,
+.SectionAnimation input:valid + .RoomJoinNameLabel .RoomJoinNameContent,
+.SectionAnimation input:focus + .RoomJoinPasswordLabel .RoomJoinPasswordContent,
+.SectionAnimation
+  input:valid
+  + .RoomJoinPasswordLabel
+  .RoomJoinPasswordContent {
+  transform: translateY(-110%);
+  font-size: 14px;
+  color: #6661ba;
+}
+
+.SectionAnimation input:focus + .RoomJoinNameLabel::after,
+.SectionAnimation input:valid + .RoomJoinNameLabel::after,
+.SectionAnimation input:focus + .RoomJoinPasswordLabel::after,
+.SectionAnimation input:valid + .RoomJoinPasswordLabel::after {
+  transform: translateX(0%);
+}
+/* Here */
+.JoinModal .JoinModalMain .JoinButton {
+  background-color: #6661ba;
+  border: none;
+  border-radius: 4px;
+
+  color: #ffffff;
+  font-size: 1rem;
+
+  padding: 12px 0px;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.JoinModal .JoinModalMain .JoinButton:focus {
+  outline: none;
+}
+
+.JoinModal .JoinModalMain .JoinButton:hover {
+  background-color: #121127;
+}
+
+.ErrorJoinModal .JoinErrorText {
+  color: #fa5a48;
+}

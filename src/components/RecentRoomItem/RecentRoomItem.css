@@ -1,0 +1,25 @@
+.RecentRoomItem {
+  background-color: #ffffff;
+}
+
+.RecentRoomItem a {
+  text-decoration: none;
+  color: #6661ba;
+  text-align: center;
+
+  display: block;
+  padding: 6px 0px;
+
+  border-bottom: 1px solid #6661ba;
+  transition: all 0.3s ease;
+}
+
+.RecentRoomItem a:hover {
+  background-color: #6661ba;
+  color: #ffffff;
+}
+
+.RecentRoomItem.select a {
+  background-color: #bdbbe1;
+  color: #6661ba;
+}

@@ -1,0 +1,37 @@
+.RecentRoom button {
+  display: block;
+  width: 100%;
+  padding: 8px 0px;
+
+  border: none;
+  background-color: #6661ba;
+
+  color: #ffffff;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.RecentRoom button:focus {
+  outline: none;
+}
+
+.RecentRoom.active .ListRecentRoom {
+  height: 600px;
+}
+
+.RecentRoom .ListRecentRoom {
+  background-color: #ffffff;
+  height: 0px;
+  overflow-y: scroll;
+  transition: all 0.5s ease;
+}
+
+.RecentRoom .ListRecentRoom::-webkit-scrollbar {
+  width: 0px;
+  background-color: #ffffff;
+}
+
+.RecentRoom.active .BlockButton button {
+  background-color: #6661ba;
+}

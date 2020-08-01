@@ -1,0 +1,32 @@
+.Messages .MessagesContainer {
+  display: flex;
+  height: 90vh;
+}
+
+.Messages .MessagesContainer .ListConversationWrapper {
+  width: 200px;
+}
+
+.Messages .MessagesContainer .ConversationInfoWrapper {
+  width: 330px;
+}
+
+.Messages .MessagesContainer .ChatBoxWrapper {
+  flex-grow: 1;
+}
+
+.CreateModalWrapper {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.OutOfModal {
+  position: relative;
+
+  height: 100vh;
+
+  background-color: #000000;
+  opacity: 0.3;
+}

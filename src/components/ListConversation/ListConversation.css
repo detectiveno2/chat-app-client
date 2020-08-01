@@ -1,0 +1,26 @@
+.ListConversation {
+  background-color: #eaf0fb;
+  height: 100%;
+}
+
+.ListConversation .ButtonArea button {
+  display: block;
+  width: 100%;
+  padding: 8px 0px;
+
+  border: none;
+  background-color: #6661ba;
+
+  color: #ffffff;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.ListConversation .ButtonArea button:focus {
+  outline: none;
+}
+
+.ListConversation .ButtonArea button:hover {
+  background-color: #121127;
+}

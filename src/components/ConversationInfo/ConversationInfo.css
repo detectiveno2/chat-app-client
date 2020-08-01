@@ -1,0 +1,64 @@
+.ConversationInfo {
+  background-color: #bdbbe1;
+  height: 100%;
+}
+
+.ConversationInfo .GroupInfo {
+  padding: 30px 0px;
+}
+
+/* .ConversationInfo .GroupInfo .AvatarGroup {
+  text-align: center;
+} */
+
+.ConversationInfo .GroupInfo .AvatarGroup img {
+  border-radius: 50%;
+}
+
+.ConversationInfo .GroupInfo .NameGroup p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.WrapAvatarGroup1 {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #121127;
+}
+
+.WrapAvatarGroup1 .WrapAvatarGroup2 {
+  background-color: #ffffff;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  margin: 5px auto;
+  display: flex;
+}
+
+.WrapAvatarGroup1 .WrapAvatarGroup2 .WrapAvatarGroup3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ConversationInfo .NoShownRoom {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0px 40px;
+}
+
+.ConversationInfo .NoShownRoom p {
+  text-align: center;
+  color: #121127;
+  font-size: 2rem;
+}
