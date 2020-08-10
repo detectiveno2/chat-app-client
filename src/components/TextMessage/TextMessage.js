@@ -5,7 +5,7 @@ import User from '../../contexts/UserContext';
 import './TextMessage.css';
 
 function TextMessage({ mess }) {
-  const { author, avatarUrl, content, date, _id } = mess;
+  const { author, avatarUrl, content, date } = mess;
   const { user } = useContext(User);
   const messageClass = classNames({
     systemMessage: author === 'system' ? true : false,
@@ -19,7 +19,7 @@ function TextMessage({ mess }) {
       <div className={messageClass}>
         {messageClass !== 'systemMessage' && (
           <div className="AvatarArea">
-            <img width="52" src={avatarUrl} />
+            <img width="52" src={avatarUrl} alt="avatar-group" />
           </div>
         )}
         <div className="ContentArea">
