@@ -108,7 +108,7 @@ function Register() {
           <button type="submit">Register</button>
           <div className="ExtraRegister">
             <p>
-              <Link to="/auth/Login">Login</Link> if you've had account.
+              <Link to="/auth/login">Login</Link> if you've had account.
             </p>
           </div>
         </form>
