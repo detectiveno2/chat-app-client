@@ -1,0 +1,81 @@
+.Login {
+  background: rgb(60, 57, 129);
+  background: linear-gradient(
+    135deg,
+    rgba(60, 57, 129, 1) 0%,
+    rgba(167, 165, 215, 1) 100%
+  );
+
+  height: 100vh;
+
+  position: relative;
+}
+
+.Login .MainLogin {
+  background-color: #ffffff;
+  width: 25vw;
+  padding: 16px 32px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 1);
+  box-shadow: 0px 0px 5px 0px rgba(143, 143, 143, 1);
+}
+
+.MainLogin label {
+  display: block;
+  margin: 8px 0px;
+}
+
+.MainLogin input {
+  border: none;
+  border-bottom: 3px solid #6661ba;
+  width: 100%;
+  font-size: 1rem;
+  padding: 4px 0px;
+  margin-bottom: 1rem;
+}
+
+.MainLogin input:focus {
+  outline: none;
+}
+
+.MainLogin form button {
+  display: block;
+  width: 100%;
+  background-color: #6661ba;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 0px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.MainLogin form button:hover {
+  background-color: #121127;
+}
+
+.MainLogin form button:focus {
+  outline: none;
+}
+
+.MainLogin .ErrorLogin p {
+  color: #fa5a48;
+}
+
+.MainLogin .ExtraLogin p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.MainLogin .ExtraLogin p a {
+  text-decoration: none;
+}

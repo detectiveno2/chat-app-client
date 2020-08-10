@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 import authApi from '../../api/authApi';
 
@@ -36,7 +36,6 @@ function Login() {
   return (
     <div className="Login">
       {loginSuccess && <Redirect to={{ pathname: '/messages' }} />}
-      <div className="HeadingLogin">Login</div>
       <div className="MainLogin">
         <form onSubmit={handleSubmit}>
           <div>
@@ -45,6 +44,7 @@ function Login() {
               type="email"
               name="email"
               id="email"
+              autoComplete="off"
               placeholder="abc@example.com"
               value={email}
               onChange={handleChange(setEmail)}
@@ -64,11 +64,17 @@ function Login() {
             />
           </div>
           {error && (
-            <div className="ErrorRegister">
+            <div className="ErrorLogin">
               <p>{error}</p>
             </div>
           )}
           <button type="submit">Login</button>
+          <div className="ExtraLogin">
+            <p>
+              <Link to="/auth/register">Register</Link> if you do not have
+              account.
+            </p>
+          </div>
         </form>
       </div>
     </div>
