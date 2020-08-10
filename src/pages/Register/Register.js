@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 import authApi from '../../api/authApi';
 
@@ -48,7 +48,6 @@ function Register() {
   return (
     <div className="Register">
       {registerSuccess && <Redirect to={{ pathname: '/messages' }} />}
-      <div className="HeadingRegister">Register</div>
       <div className="MainRegister">
         <form onSubmit={handleSubmit}>
           <div>
@@ -57,6 +56,7 @@ function Register() {
               type="email"
               name="email"
               id="email"
+              autoComplete="off"
               placeholder="abc@example.com"
               value={email}
               onChange={handleChange(setEmail)}
@@ -69,6 +69,7 @@ function Register() {
               type="text"
               name="userName"
               id="userName"
+              autoComplete="off"
               placeholder="abc_xyz"
               value={userName}
               onChange={handleChange(setUserName)}
@@ -105,6 +106,11 @@ function Register() {
             </div>
           )}
           <button type="submit">Register</button>
+          <div className="ExtraRegister">
+            <p>
+              <Link to="/auth/Login">Login</Link> if you've had account.
+            </p>
+          </div>
         </form>
       </div>
     </div>
