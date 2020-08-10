@@ -6,3 +6,4 @@ export { default as JoinModal } from './JoinModal/JoinModal';
 export { default as RecentRoom } from './RecentRoom/RecentRoom';
 export { default as RecentRoomItem } from './RecentRoomItem/RecentRoomItem';
 export { default as ConversationInfo } from './ConversationInfo/ConversationInfo';
+export { default as TextMessage } from './TextMessage/TextMessage';

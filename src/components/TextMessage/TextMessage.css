@@ -1,0 +1,50 @@
+.TextMessage {
+  border-bottom: 1px solid #e9e8f5;
+  padding: 4px 12px;
+}
+
+.TextMessage .systemMessage {
+  text-align: center;
+}
+
+.TextMessage .userMessage {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.TextMessage .AvatarArea img {
+  border-radius: 50%;
+}
+
+.TextMessage .memberMessage {
+  display: flex;
+}
+
+.TextMessage .AuthorTime .AuthorTitle {
+  font-weight: 500;
+}
+
+.TextMessage .AuthorTime .TimeTitle {
+  color: #777777;
+}
+
+.userMessage .ContentArea {
+  flex-grow: 1;
+  text-align: right;
+  padding: 0rem 12px;
+}
+
+.memberMessage .ContentArea {
+  flex-grow: 1;
+  text-align: left;
+  padding: 0rem 12px;
+}
+
+.HiddenTime {
+  display: none;
+  color: #777777;
+}
+
+.TextMessage:hover .HiddenTime {
+  display: inline;
+}

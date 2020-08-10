@@ -88,6 +88,7 @@ export function RoomProvider(props) {
         getRoom,
         createRoom,
         joinRoom,
+        socket,
       }}
     >
       {props.children}

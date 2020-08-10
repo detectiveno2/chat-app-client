@@ -1,4 +1,9 @@
 const RoomSocket = {
+  connectPersonalRoom: (socket, room) => {
+    const event = 'connectPersonalRoom';
+    return socket.emit(event, room);
+  },
+
   connectRoom: (socket, rooms) => {
     const event = 'connectRooms';
     return socket.emit(event, rooms);

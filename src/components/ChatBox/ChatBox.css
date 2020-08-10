@@ -1,0 +1,36 @@
+.ChatBox .ChatBoxContent {
+  height: 82vh;
+}
+
+.ChatBox div::-webkit-scrollbar {
+  width: 0px;
+}
+
+.ChatBox .ChatBoxInput {
+  height: 8vh;
+}
+
+.ChatBox .ChatBoxInput form {
+  height: 100%;
+  display: flex;
+}
+
+.ChatBox .ChatBoxInput form input {
+  flex-grow: 1;
+  border: none;
+  font-size: 1rem;
+  padding: 0px 1rem;
+}
+
+.ChatBox .ChatBoxInput form input:focus {
+  outline: none;
+}
+
+.ChatBox .ChatBoxInput form button {
+  width: 100px;
+  border: none;
+  background-color: #121127;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}

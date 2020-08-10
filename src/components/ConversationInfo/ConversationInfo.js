@@ -7,8 +7,15 @@ import roomsApi from '../../api/roomsApi';
 import './ConversationInfo.css';
 
 function ConversationInfo() {
-  const { shownRoom } = useContext(Room);
+  const { shownRoom, socket } = useContext(Room);
   const [members, setMembers] = useState([]);
+
+  // SocketIO
+  if (socket) {
+    socket.on('replyJoinRoom', ({ members }) => {
+      setMembers(members);
+    });
+  }
 
   useEffect(() => {
     const fetchMemberOnRoom = async () => {
