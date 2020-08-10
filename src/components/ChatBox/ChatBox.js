@@ -70,7 +70,7 @@ function ChatBox() {
     sendMessagesApi();
   };
 
-  return (
+  return shownRoom ? (
     <div className="ChatBox">
       <ScrollToBottom className="ChatBoxContent">
         {messages.map((mess) => (
@@ -94,6 +94,8 @@ function ChatBox() {
         </form>
       </div>
     </div>
+  ) : (
+    <div></div>
   );
 }
 
