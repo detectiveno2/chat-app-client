@@ -20,3 +20,5 @@ Please make sure to update tests as appropriate.
 
 You can see demo of this [here](https://chapp-pet.web.app/).
 
+And github server-side of this [here](https://github.com/detectiveno2/chat-app-server).
+
