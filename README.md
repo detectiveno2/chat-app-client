@@ -2,6 +2,10 @@
 
 A client-side of my pet project.
 
+## Description
+
+A pet project chat-app realtime using [Express](http://expressjs.com/), [MongoDB Cloud](https://www.mongodb.com/cloud), [SocketIO](https://socket.io/), [ReactJS](https://reactjs.org/)
+
 ## Installation
 
 You need to install package npm after clone this repo.
